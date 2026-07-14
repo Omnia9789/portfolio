@@ -1,13 +1,1012 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Omnia Ali — AI Engineer &amp; Backend Developer</title>
+<meta name="description" content="Portfolio of Omnia Ali — AI Engineer & Backend Developer building LLM systems, RAG pipelines, ASP.NET Core APIs, and data engineering pipelines." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============ CUSTOM CURSOR AURA (subtle, desktop only via CSS) ============ -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo" aria-label="Omnia Ali — home"><span class="logo-mark">OA</span></a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a class="icon-btn" href="https://github.com/Omnia9789" target="_blank" rel="noopener" aria-label="GitHub profile">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.3 3.5.99.1-.78.42-1.3.76-1.6-2.66-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.6-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+      </a>
+      <a class="icon-btn" href="https://www.linkedin.com/in/omnia-ali-781977376/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM3.56 20.45h3.56V9H3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+      </a>
+      <a class="icon-btn" href="https://www.facebook.com/share/1Jjuz8CJTw/" target="_blank" rel="noopener" aria-label="Facebook profile">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 5.99 4.39 10.95 10.13 11.85v-8.4H7.08v-3.45h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.95h-1.51c-1.49 0-1.96.93-1.96 1.89v2.28h3.33l-.53 3.45h-2.8v8.4C19.61 23.02 24 18.06 24 12.07Z"/></svg>
+      </a>
+      <a class="btn btn-ghost btn-sm" href="assets/resume/Omnia-Ali-Resume.pdf" download>Resume <span class="arrow">↓</span></a>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="nav-mobile" id="navMobile" aria-label="Mobile">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+    <a href="assets/resume/Omnia-Ali-Resume.pdf" download class="mobile-resume">Download Résumé ↓</a>
+    <div class="mobile-social">
+      <a href="https://github.com/Omnia9789" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.3 3.5.99.1-.78.42-1.3.76-1.6-2.66-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.6-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/omnia-ali-781977376/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM3.56 20.45h3.56V9H3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/share/1Jjuz8CJTw/" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 5.99 4.39 10.95 10.13 11.85v-8.4H7.08v-3.45h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.95h-1.51c-1.49 0-1.96.93-1.96 1.89v2.28h3.33l-.53 3.45h-2.8v8.4C19.61 23.02 24 18.06 24 12.07Z"/></svg>
+      </a>
+    </div>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-aura hero-aura-a" aria-hidden="true"></div>
+  <div class="hero-aura hero-aura-b" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="reveal-hero badge-avail">
+        <span class="dot"></span> Available for internships &amp; new roles
+      </div>
+
+      <p class="reveal-hero eyebrow">Hi there, I'm</p>
+
+      <h1 class="reveal-hero hero-name">
+        <span class="hn-light">Omnia</span>
+        <span class="hn-bold">Ali</span>
+      </h1>
+
+      <div class="reveal-hero role-row">
+        <span class="role-pill">AI Engineer &amp; Backend Developer</span>
+        <span class="role-type" id="roleType" aria-live="polite"></span>
+      </div>
+
+      <p class="reveal-hero hero-desc">
+        I build AI-powered systems and reliable backend platforms — from LLM pipelines and RAG evaluation to production-grade ASP.NET Core APIs and automated data workflows. Third-year Computer Science (AI Major) student at Cairo University, blending research-driven AI engineering with clean, scalable backend architecture.
+      </p>
+
+      <div class="reveal-hero hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work <span class="arrow">→</span></a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+
+      <div class="reveal-hero hero-stack" aria-label="Core technologies">
+        <span class="stack-pill"><i class="dot-mini"></i>Python</span>
+        <span class="stack-pill"><i class="dot-mini"></i>C# / .NET</span>
+        <span class="stack-pill"><i class="dot-mini"></i>LLM · RAG</span>
+        <span class="stack-pill"><i class="dot-mini"></i>Azure &amp; SQL</span>
+      </div>
+    </div>
+
+    <div class="hero-robot-wrap reveal-hero" id="robotWrap">
+      <canvas id="robotCanvas" aria-label="Interactive 3D robot mascot that follows your cursor"></canvas>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+    <span></span>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="section-inner about-grid">
+    <div class="about-media reveal-up">
+      <div class="photo-frame">
+        <img src="assets/me/about.jpg" alt="Omnia Ali smiling, professional portrait" />
+      </div>
+    </div>
+
+    <div class="about-copy">
+      <p class="eyebrow reveal-up"><span class="eyebrow-tag">01</span>About</p>
+      <h2 class="reveal-up section-title">Cross-field engineer, one clear focus: shipping things that work.</h2>
+      <p class="reveal-up body-text">
+        I'm a third-year Computer Science student (AI Major) at Cairo University, currently splitting my time between two things I care about equally: building AI systems that behave the way they're supposed to, and building backend software that keeps running long after the demo is over.
+      </p>
+      <p class="reveal-up body-text">
+        That's meant evaluating LLM outputs for hallucination and bias, orchestrating multi-agent RAG pipelines, shipping ASP.NET Core APIs to Azure, automating enterprise workflows with RPA, and cleaning up messy data into dashboards people actually use. Different fields, same habit: understand the problem properly, then build the smallest reliable thing that solves it.
+      </p>
+
+      <div class="fact-grid reveal-up">
+        <div class="fact">
+          <p class="fact-label">Location</p>
+          <p class="fact-value">Cairo, Egypt</p>
+        </div>
+        <div class="fact">
+          <p class="fact-label">Education</p>
+          <p class="fact-value">B.Sc. Computer Science, AI Major — Cairo University</p>
+        </div>
+        <div class="fact">
+          <p class="fact-label">Languages</p>
+          <p class="fact-value">Arabic (Native) · English (C2) · French (B2)</p>
+        </div>
+        <div class="fact">
+          <p class="fact-label">Currently</p>
+          <p class="fact-value">.NET Academy @ Luftborn · Integration Intern @ Ejada</p>
+        </div>
+      </div>
+
+      <div class="reveal-up leadership-note">
+        <span class="lead-icon">★</span>
+        Beyond the code: Country Ambassador for Egypt in two international competitions (IAAC &amp; IYMC), coordinating 700+ student participants — twice recognized with the Ambassador Award for Excellent Encouragement.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section section-alt" id="education">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up"><span class="eyebrow-tag">02</span>Education</p>
+    <h2 class="reveal-up section-title">Grounded in fundamentals, aimed at AI.</h2>
+
+    <div class="edu-layout">
+      <div class="edu-media reveal-up">
+        <div class="photo-frame photo-frame-square">
+          <img src="assets/me/edu.jpg" alt="Omnia Ali on campus" />
+        </div>
+      </div>
+
+      <div class="edu-cards">
+        <div class="edu-card reveal-up">
+          <div class="edu-card-head">
+            <div>
+              <h3>B.Sc. Computer Science — AI Major</h3>
+              <p class="edu-org">Cairo University · Cairo, Egypt</p>
+            </div>
+            <span class="pill pill-mono">Expected 2027</span>
+          </div>
+          <p class="edu-gpa">GPA 3.7 / 4.0</p>
+          <div class="tag-row">
+            <span class="tag">Artificial Intelligence</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Cloud Computing</span>
+            <span class="tag">Data Structures &amp; Algorithms</span>
+            <span class="tag">Database Systems</span>
+          </div>
+        </div>
+
+        <div class="edu-card reveal-up">
+          <div class="edu-card-head">
+            <div>
+              <h3>High School Diploma</h3>
+              <p class="edu-org">Red Sea STEM School · Hurghada, Egypt</p>
+            </div>
+            <span class="pill pill-mono">2023</span>
+          </div>
+        </div>
+
+        <div class="edu-card edu-card-certs reveal-up">
+          <div class="edu-card-head">
+            <div>
+              <h3>Specialized coursework &amp; certifications</h3>
+              <p class="edu-org">Stanford Online · DeepLearning.AI · Google · Hugging Face — see the <a href="#certificates">Certificates section</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up"><span class="eyebrow-tag">03</span>Skills</p>
+    <h2 class="reveal-up section-title">One toolbox, four disciplines.</h2>
+
+    <div class="marquee reveal-up" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Python</span><span>C#</span><span>LangGraph</span><span>ASP.NET Core</span><span>RAG</span><span>Azure</span><span>SQL Server</span><span>Prompt Engineering</span><span>EF Core</span><span>Pandas</span><span>Hugging Face</span><span>Docker</span><span>REST APIs</span><span>Streamlit</span><span>JWT Auth</span><span>PyTorch</span>
+        <span>Python</span><span>C#</span><span>LangGraph</span><span>ASP.NET Core</span><span>RAG</span><span>Azure</span><span>SQL Server</span><span>Prompt Engineering</span><span>EF Core</span><span>Pandas</span><span>Hugging Face</span><span>Docker</span><span>REST APIs</span><span>Streamlit</span><span>JWT Auth</span><span>PyTorch</span>
+      </div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal-up">
+        <p class="skill-cat">01 · AI &amp; LLM Engineering</p>
+        <div class="tag-row">
+          <span class="tag">LangGraph</span><span class="tag">LlamaIndex</span><span class="tag">RAG Pipelines</span><span class="tag">Prompt Engineering</span><span class="tag">LLM Evaluation</span><span class="tag">Hallucination Detection</span><span class="tag">Fine-tuning (LoRA)</span><span class="tag">Hugging Face</span><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">scikit-learn</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal-up">
+        <p class="skill-cat">02 · Backend &amp; Cloud</p>
+        <div class="tag-row">
+          <span class="tag">ASP.NET Core</span><span class="tag">Web API / MVC</span><span class="tag">Entity Framework Core</span><span class="tag">JWT Auth</span><span class="tag">REST APIs</span><span class="tag">Azure App Service</span><span class="tag">Docker</span><span class="tag">SQL Server</span><span class="tag">SQLite</span><span class="tag">Repository Pattern</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal-up">
+        <p class="skill-cat">03 · Data &amp; Visualization</p>
+        <div class="tag-row">
+          <span class="tag">Pandas / NumPy</span><span class="tag">ETL Pipelines</span><span class="tag">SQLAlchemy</span><span class="tag">Streamlit</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">Plotly</span><span class="tag">Power BI</span><span class="tag">Excel / openpyxl</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal-up">
+        <p class="skill-cat">04 · Automation &amp; Tools</p>
+        <div class="tag-row">
+          <span class="tag">RPA — Automation Anywhere</span><span class="tag">Hangfire</span><span class="tag">Git &amp; GitHub</span><span class="tag">Postman</span><span class="tag">Swagger / OpenAPI</span><span class="tag">Jupyter</span><span class="tag">Agile / Scrum</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section section-alt" id="experience">
+  <div class="section-inner">
+    <div class="section-head-row">
+      <div>
+        <p class="eyebrow reveal-up"><span class="eyebrow-tag">04</span>Experience</p>
+        <h2 class="reveal-up section-title">Where the work actually happened.</h2>
+      </div>
+    </div>
+
+    <div class="tabs reveal-up" role="tablist" aria-label="Experience categories" data-group="exp">
+      <button class="tab active" data-filter="ai">AI, LLM &amp; Data</button>
+      <button class="tab" data-filter="backend">Backend &amp; Full-Stack</button>
+      <button class="tab" data-filter="automation">Automation &amp; RPA</button>
+      <button class="tab" data-filter="clientops">Client Ops &amp; Support</button>
+      <button class="tab" data-filter="translation">Translation &amp; Interpretation</button>
+    </div>
+
+    <div class="timeline" id="expList">
+
+      <!-- AI, LLM & Data -->
+      <article class="tl-card reveal-up" data-cat="ai">
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-top">
+            <h3>AI Automation, Evaluation &amp; Data Engineer</h3>
+            <span class="pill pill-current">Current</span>
+          </div>
+          <p class="tl-meta">Freelance · Remote — Jan 2025 – Present</p>
+          <ul>
+            <li>Designed and shipped end-to-end AI-powered automation workflows for content, research, and data pipelines — cutting manual effort by over 60% across active accounts.</li>
+            <li>Built and iterated on multi-agent LLM systems (LangGraph, LlamaIndex), orchestrating retrieval, reasoning, and fact-checking agents.</li>
+            <li>Evaluated large-scale AI/ML outputs for instruction-following, factual accuracy, safety, and bias across bilingual Arabic–English datasets, using rubric-based scoring (Accuracy, Precision, Recall, F1).</li>
+            <li>Authored adversarial edge-case prompts and Golden Responses for alignment workflows; delivered structured evaluation reports supporting iterative model improvement.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-card reveal-up" data-cat="ai">
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-top"><h3>AI Data Annotator — Bilingual Arabic–English</h3></div>
+          <p class="tl-meta">Mercor · Remote — Jan 2026 – Feb 2026</p>
+          <ul>
+            <li>Evaluated bilingual AI-generated datasets for linguistic correctness, cultural appropriateness, and structural quality.</li>
+            <li>Flagged inconsistencies between source documents and model outputs within strict quality and deadline standards.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Backend & Full-Stack -->
+      <article class="tl-card" data-cat="backend" hidden>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-top">
+            <h3>Academy Software Developer — .NET Track</h3>
+            <span class="pill pill-current">Current</span>
+          </div>
+          <p class="tl-meta">Luftborn · Cairo, Egypt (Hybrid) — Jul 2026 – Dec 2027</p>
+          <ul>
+            <li>Selected for Luftborn's competitive 18-month .NET Academy, combining structured technical training with hands-on work on live client projects.</li>
+            <li>Contributing to .NET software delivery for European clients (Denmark, UK, Sweden) as part of an agile team.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-card" data-cat="backend" hidden>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-top">
+            <h3>Applications Development &amp; Integration Intern</h3>
+            <span class="pill pill-current">Current</span>
+          </div>
+          <p class="tl-meta">Ejada — Enterprise Systems Integration Team · Cairo, Egypt — Jul 2026</p>
+          <ul>
+            <li>Supporting enterprise application integration initiatives, helping connect and streamline client systems.</li>
+            <li>Assisting with requirements, testing, and deployment activities for enterprise-scale solutions.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-card" data-cat="backend" hidden>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-top"><h3>.NET &amp; Cloud Development Intern</h3></div>
+          <p class="tl-meta">Infinity Tech Company · Hurghada, Egypt (On-site) — Jun 2025 – Sep 2025</p>
+          <ul>
+            <li>Built full-stack and backend apps with ASP.NET Core MVC, Razor Pages, and Web API; developed and integrated RESTful APIs end to end.</li>
+            <li>Worked with Entity Framework Core for schema design, persistence, and CRUD operations; applied authentication, authorization, and clean project structure.</li>
+            <li>Gained hands-on exposure to Azure services and cloud-based development workflows.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-card" data-cat="backend" hidden>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-top"><h3>Technical Intern</h3></div>
+          <p class="tl-meta">National Telecommunication Institute (NTI) · Remote — 2024</p>
+          <ul>
+            <li>Completed a one-month remote internship focused on practical software development and structured technical tasks.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Automation & RPA -->
+      <article class="tl-card" data-cat="automation" hidden>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-top"><h3>RPA Automation Intern</h3></div>
+          <p class="tl-meta">Nokia · Maadi, Cairo, Egypt — Jul 2025 – Sep 2025</p>
+          <ul>
+            <li>Developed and maintained Robotic Process Automation workflows using Automation Anywhere to automate business processes.</li>
+            <li>Analyzed business processes to identify automation opportunities; integrated bots with enterprise applications, databases, and document workflows.</li>
+            <li>Performed testing, debugging, monitoring, and optimization of automation solutions.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Client Ops & Support -->
+      <article class="tl-card" data-cat="clientops" hidden>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-top">
+            <h3>Client Delivery Operations Associate</h3>
+            <span class="pill pill-current">Current</span>
+          </div>
+          <p class="tl-meta">Storyteller · Remote, Egypt — Apr 2026 – Present</p>
+          <ul>
+            <li>Manage multiple active client accounts, tracking open requests, overdue actions, and escalations to ensure timely resolution and sustained satisfaction.</li>
+            <li>Investigate account and product issues by gathering context and routing findings to the right team with complete supporting documentation.</li>
+            <li>Coordinate across account management, product, engineering, support, and operations to keep deliverables on schedule.</li>
+            <li>Contribute to reusable templates and process documentation that improve consistency and retention outcomes.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-card" data-cat="clientops" hidden>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-top">
+            <h3>Client Operations &amp; AI Project Coordinator</h3>
+            <span class="pill pill-current">Current</span>
+          </div>
+          <p class="tl-meta">Freelance · Remote — Jan 2025 – Present</p>
+          <ul>
+            <li>Coordinated multiple bilingual client projects simultaneously, managing deadlines, quality standards, revisions, and final delivery.</li>
+            <li>Prepared structured reports and evaluation summaries using consistent templates and detailed client guidelines.</li>
+            <li>Used AI tools to support content generation, research, and quality-control workflows without sacrificing accuracy.</li>
+            <li>Identified recurring workflow issues and introduced clearer processes to reduce errors and turnaround time.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-card" data-cat="clientops" hidden>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-top"><h3>Customer Support &amp; Operations Agent — U.S. Medical Insurance</h3></div>
+          <p class="tl-meta">Foundever · Egypt — 2024 – 2025</p>
+          <ul>
+            <li>Managed a high volume of inbound and outbound calls and emails for a U.S.-based medical insurance account, handling billing inquiries and coverage disputes.</li>
+            <li>Resolved overdue accounts and complex billing cases by investigating records and coordinating with internal departments.</li>
+            <li>De-escalated demanding, emotionally charged situations calmly and assertively, retaining client trust and preventing churn.</li>
+            <li>Documented all case details and resolution notes accurately within CRM systems, maintaining complete auditable records.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-card" data-cat="clientops" hidden>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-top"><h3>Hotel Reception &amp; Guest Services Coordinator</h3></div>
+          <p class="tl-meta">Hospitality Sector · Hurghada, Egypt — 2019 – 2021</p>
+          <ul>
+            <li>Coordinated guest requests involving reservations, scheduling, and service arrangements in a high-volume front-of-house environment.</li>
+            <li>Managed calendars, booking records, and guest information with accuracy, ensuring smooth handoffs between departments.</li>
+            <li>Handled billing inquiries, payment discrepancies, and service complaints directly, resolving issues promptly.</li>
+            <li>Assisted international guests in Arabic, English, and French, adapting communication style to build rapport quickly.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-card" data-cat="clientops" hidden>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-top">
+            <h3>Arabic Content Reviewer &amp; Linguistic Editor</h3>
+            <span class="pill pill-current">Current</span>
+          </div>
+          <p class="tl-meta">Freelance · Remote — 2020 – Present</p>
+          <ul>
+            <li>Review and format Arabic content for accuracy, clarity, consistency, and appropriate tone to meet client standards.</li>
+            <li>Manage multiple concurrent assignments and reference materials while meeting individual project deadlines.</li>
+            <li>Incorporate client feedback into revised deliverables and maintain organized version histories for all projects.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Translation & Interpretation -->
+      <article class="tl-card" data-cat="translation" hidden>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-top"><h3>Senior Technical Translator</h3></div>
+          <p class="tl-meta">RWS — 2026</p>
+          <ul>
+            <li>Translated technical manuals, engineering documentation, emergency response procedures, and scientific reports.</li>
+            <li>Localized software used in security, healthcare, and public safety sectors.</li>
+            <li>Managed terminology databases for highly technical projects.</li>
+            <li>Performed MTPE and linguistic QA.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-card" data-cat="translation" hidden>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-top"><h3>Technical Interpreter &amp; Translator</h3></div>
+          <p class="tl-meta">Hotzone Solutions Group — 2025</p>
+          <ul>
+            <li>Delivered simultaneous and consecutive interpretation during technical workshops and training sessions.</li>
+            <li>Interpreted discussions involving emergency management and hazardous materials.</li>
+            <li>Supported international conferences and government training programs.</li>
+            <li>Produced certified technical translations.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-card" data-cat="translation" hidden>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-top"><h3>Arabic Localization Specialist</h3></div>
+          <p class="tl-meta">Welocalize — 2026</p>
+          <ul>
+            <li>Evaluated multilingual AI systems.</li>
+            <li>Reviewed technical AI documentation.</li>
+            <li>Performed linguistic quality assurance.</li>
+            <li>Improved Arabic terminology consistency across AI products.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-card" data-cat="translation" hidden>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-top"><h3>Scientific &amp; Medical Translator</h3></div>
+          <p class="tl-meta">Bayantech — 2024</p>
+          <ul>
+            <li>Translated scientific reports and medical documentation.</li>
+            <li>Translated chemical safety data sheets (SDS) and laboratory procedures.</li>
+            <li>Translated healthcare manuals.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="tl-card" data-cat="translation" hidden>
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-top">
+            <h3>Independent Technical Translator</h3>
+            <span class="pill pill-current">Ongoing</span>
+          </div>
+          <p class="tl-meta">Freelance · Remote</p>
+          <ul>
+            <li>Engineering translation.</li>
+            <li>AI translation and localization.</li>
+            <li>Cybersecurity translation.</li>
+            <li>Emergency management translation.</li>
+            <li>Scientific documentation translation.</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up"><span class="eyebrow-tag">05</span>Projects</p>
+    <h2 class="reveal-up section-title">Selected work, grouped by field.</h2>
+
+    <div class="tabs reveal-up" role="tablist" aria-label="Project categories" data-group="proj">
+      <button class="tab active" data-filter="ai">AI, LLM &amp; Voice</button>
+      <button class="tab" data-filter="data">Data Engineering</button>
+      <button class="tab" data-filter="backend">Backend &amp; APIs</button>
+      <button class="tab" data-filter="automation">Automation</button>
+    </div>
+
+    <div class="project-grid" id="projList">
+
+      <!-- AI, LLM & Voice -->
+      <article class="proj-card reveal-up" data-cat="ai">
+        <span class="proj-ribbon">Featured</span>
+        <div class="proj-img"><img src="assets/projects/multi-agent-research-assistant.jpg" alt="Multi-Agent Research Assistant terminal output" loading="lazy" /></div>
+        <div class="proj-body">
+          <h3>Multi-Agent Research Assistant</h3>
+          <p>Orchestrates specialized retrieval, reasoning, and fact-checking agents via LangGraph to answer complex multi-step questions with hallucination-aware output.</p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">LangGraph</span><span class="tag">LlamaIndex</span><span class="tag">RAG</span><span class="tag">Streamlit</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789/multi-agent-research-assistant" target="_blank" rel="noopener">View Code <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-cat="ai">
+        <span class="proj-ribbon">Featured</span>
+        <div class="proj-img"><img src="assets/projects/medvision-pneumonia.jpg" alt="Pneumonia detection model results" loading="lazy" /></div>
+        <div class="proj-body">
+          <h3>MedVision — Pneumonia Detection</h3>
+          <p>Benchmarked classical ML, custom CNNs, autoencoder anomaly detection, and transfer learning for chest X-ray classification; fine-tuned ViT with attention maps. Best result: ResNet50 at 95.19% accuracy, 0.9892 ROC-AUC.</p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Hugging Face</span><span class="tag">ViT</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789/MedVision1" target="_blank" rel="noopener">View Code <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-cat="ai">
+        <div class="proj-img"><img src="assets/projects/documind-ai.jpg" alt="DocuMind AI app screenshot" loading="lazy" /></div>
+        <div class="proj-body">
+          <h3>DocuMind-AI</h3>
+          <p>PDF question-answering assistant with RAG retrieval and hallucination-aware prompting, fully deployed on Azure App Service.</p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">Claude API</span><span class="tag">RAG</span><span class="tag">Azure</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789/DocuMind-AI" target="_blank" rel="noopener">View Code <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-cat="ai">
+        <div class="proj-img"><img src="assets/projects/rag-faithfulness-study.jpg" alt="RAG Faithfulness Study charts" loading="lazy" /></div>
+        <div class="proj-body">
+          <h3>RAG Faithfulness Study</h3>
+          <p>Research benchmark comparing direct prompting vs. retrieval-augmented prompting on QA tasks, evaluating faithfulness, correctness, completeness, and hallucination rate.</p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">LLM API</span><span class="tag">Pandas</span><span class="tag">Jupyter</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789/rag-faithfulness-study" target="_blank" rel="noopener">View Code <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-cat="ai">
+        <div class="proj-img"><img src="assets/projects/testforge-cloud.jpg" alt="TestForge Cloud screenshot" loading="lazy" /></div>
+        <div class="proj-body">
+          <h3>TestForge-Cloud</h3>
+          <p>Cloud-deployed AI service that auto-generates pytest unit tests from source code, with prompt-injection sanitization, output constraint enforcement, and AST validation.</p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">LLM API</span><span class="tag">Azure</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789/TestForge-Cloud" target="_blank" rel="noopener">View Code <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-cat="ai">
+        <div class="proj-img no-img"><div class="code-glyph">&lt;/&gt;</div></div>
+        <div class="proj-body">
+          <h3>CLI AI Unit Test Generator</h3>
+          <p>Command-line variant that generates deterministic pytest unit tests via LLM API, with prompt-injection sanitisation and a repair-retry validation flow.</p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">OpenAI / Gemini</span><span class="tag">AST Validation</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789/ai-unit-test-generator-cli" target="_blank" rel="noopener">View Code <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-cat="ai">
+        <div class="proj-img"><img src="assets/projects/voice-agent-cli.jpg" alt="Voice Agent CLI terminal" loading="lazy" /></div>
+        <div class="proj-body">
+          <h3>Voice Agent CLI</h3>
+          <p>End-to-end voice pipeline — mic input → Whisper STT → LLM reasoning → TTS output — with modular, swappable components and an Arabic extension.</p>
+          <div class="tag-row"><span class="tag">Whisper</span><span class="tag">LLM API</span><span class="tag">gTTS</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789/voice-agent-cli" target="_blank" rel="noopener">View Code <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-cat="ai">
+        <div class="proj-img"><img src="assets/projects/whisper-wer-bench.jpg" alt="Whisper WER Bench charts" loading="lazy" /></div>
+        <div class="proj-body">
+          <h3>Whisper WER Bench</h3>
+          <p>Batch transcription pipeline across Whisper small/medium, computing per-clip and per-model Word Error Rate with CSV reports and comparison charts.</p>
+          <div class="tag-row"><span class="tag">Whisper</span><span class="tag">jiwer</span><span class="tag">Pandas</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789/whisper-wer-bench" target="_blank" rel="noopener">View Code <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-cat="ai">
+        <div class="proj-img"><img src="assets/projects/multilingual-tts-eval.jpg" alt="Multilingual TTS evaluation radar chart" loading="lazy" /></div>
+        <div class="proj-body">
+          <h3>Multilingual TTS Evaluator</h3>
+          <p>Evaluated gTTS, Coqui TTS, and SpeechT5 on Arabic &amp; English using a MOS-style rubric; visualised comparisons with bar and radar plots.</p>
+          <div class="tag-row"><span class="tag">Coqui TTS</span><span class="tag">SpeechT5</span><span class="tag">Seaborn</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789/multilingual-tts-eval" target="_blank" rel="noopener">View Code <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-cat="ai">
+        <div class="proj-img"><img src="assets/projects/scratch-vs-keras.jpg" alt="Scratch vs Keras training curves" loading="lazy" /></div>
+        <div class="proj-body">
+          <h3>Scratch vs. Keras</h3>
+          <p>Built a neural network from scratch in NumPy and benchmarked it against an equivalent Keras model, comparing training and validation loss/accuracy curves.</p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">NumPy</span><span class="tag">Keras</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789" target="_blank" rel="noopener">GitHub Profile <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <!-- Data Engineering -->
+      <article class="proj-card reveal-up" data-cat="data" hidden>
+        <span class="proj-ribbon">Featured</span>
+        <div class="proj-img"><img src="assets/projects/sales-kpi-dashboard.jpg" alt="Sales KPI dashboard" loading="lazy" /></div>
+        <div class="proj-body">
+          <h3>Sales KPI Dashboard &amp; Automated Reporting</h3>
+          <p>End-to-end pipeline on the Superstore Sales dataset: data cleaning, 8 SQL analytical queries, an interactive Streamlit dashboard, and automated Excel reports that flag month-over-month drops over 10%.</p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Streamlit</span><span class="tag">openpyxl</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789/sales-kpi-dashboard" target="_blank" rel="noopener">View Code <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-cat="data" hidden>
+        <div class="proj-img"><img src="assets/projects/weather-etl-pipeline.jpg" alt="Weather ETL pipeline diagram" loading="lazy" /></div>
+        <div class="proj-body">
+          <h3>Weather ETL Pipeline</h3>
+          <p>Production-style ETL pipeline extracting hourly weather data for multiple cities via the Open-Meteo API, with 6 window-function SQL queries and timestamped CSV/Parquet exports.</p>
+          <div class="tag-row"><span class="tag">SQLAlchemy</span><span class="tag">SQLite</span><span class="tag">PyArrow</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789/Weather-ETL-Pipeline" target="_blank" rel="noopener">View Code <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <!-- Backend & APIs -->
+      <article class="proj-card reveal-up" data-cat="backend" hidden>
+        <span class="proj-ribbon">Featured</span>
+        <div class="proj-img"><img src="assets/projects/ecommerce-mvc.jpg" alt="E-Commerce MVC storefront" loading="lazy" /></div>
+        <div class="proj-body">
+          <h3>E-Commerce MVC Platform</h3>
+          <p>Full-featured e-commerce app with browsing, filtering, reviews, cart, ordering, and a role-based admin dashboard using Repository and Service Layer patterns.</p>
+          <div class="tag-row"><span class="tag">ASP.NET Core MVC</span><span class="tag">EF Core</span><span class="tag">SQL Server</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789/ecommerce-mvc-aspnetcore" target="_blank" rel="noopener">View Code <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-cat="backend" hidden>
+        <span class="proj-ribbon">Featured</span>
+        <div class="proj-img"><img src="assets/projects/job-application-tracker.jpg" alt="Job Application Tracker dashboard" loading="lazy" /></div>
+        <div class="proj-body">
+          <h3>Job Application Tracker</h3>
+          <p>Full-stack job tracking system with a status pipeline (Wishlist → Applied → Interview → Offer), automated email reminders via Hangfire, JWT-secured API, and PDF/Excel export.</p>
+          <div class="tag-row"><span class="tag">ASP.NET Core</span><span class="tag">Hangfire</span><span class="tag">EF Core</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789/Task_Worker" target="_blank" rel="noopener">View Code <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-cat="backend" hidden>
+        <div class="proj-img"><img src="assets/projects/cityinfo-versionedapi.jpg" alt="CityInfo Versioned API Swagger docs" loading="lazy" /></div>
+        <div class="proj-body">
+          <h3>CityInfo.VersionedAPI</h3>
+          <p>Production-style versioned REST API with JWT authentication, Swagger documentation, and Serilog structured logging over SQLite.</p>
+          <div class="tag-row"><span class="tag">ASP.NET Core Web API</span><span class="tag">JWT</span><span class="tag">Swagger</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789/CityInfo.VersionedAPI" target="_blank" rel="noopener">View Code <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-cat="backend" hidden>
+        <div class="proj-img"><img src="assets/projects/wiredbrain-coffee.jpg" alt="WiredBrain Coffee admin dashboard" loading="lazy" /></div>
+        <div class="proj-body">
+          <h3>WiredBrain Coffee — Admin Dashboard</h3>
+          <p>Admin dashboard for managing products, surveys, and weekly business statistics, with full CRUD and responsive admin UI components.</p>
+          <div class="tag-row"><span class="tag">Razor Pages</span><span class="tag">EF Core</span><span class="tag">SQL Server</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789/WiredBrain-Coffee-ASP.NET-Core-Razor-Pages-Admin-Dashboard" target="_blank" rel="noopener">View Code <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-cat="backend" hidden>
+        <div class="proj-img"><img src="assets/projects/bethanys-pie-shop.jpg" alt="Bethany's Pie Shop storefront" loading="lazy" /></div>
+        <div class="proj-body">
+          <h3>Bethany's Pie Shop</h3>
+          <p>MVC storefront with product listing, category filtering, and a database-driven ordering flow built on Entity Framework Core.</p>
+          <div class="tag-row"><span class="tag">ASP.NET Core MVC</span><span class="tag">EF Core</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789/aspnetcore-bethany-pie-shop" target="_blank" rel="noopener">View Code <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <article class="proj-card reveal-up" data-cat="backend" hidden>
+        <div class="proj-img"><img src="assets/projects/recipe-finder-django.jpg" alt="Recipe Finder Django REST API" loading="lazy" /></div>
+        <div class="proj-body">
+          <h3>Recipe Finder — Django REST API</h3>
+          <p>A recipe search and management REST API built with Django REST Framework, exposing endpoints for browsing, filtering, and saving recipes.</p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">Django REST Framework</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789" target="_blank" rel="noopener">GitHub Profile <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+      <!-- Automation -->
+      <article class="proj-card reveal-up" data-cat="automation" hidden>
+        <div class="proj-img"><img src="assets/projects/telegram-booking-bot.jpg" alt="Telegram booking bot conversation" loading="lazy" /></div>
+        <div class="proj-body">
+          <h3>Telegram Appointment Booking Bot</h3>
+          <p>Fully functional bot walking users through a multi-step booking flow (service → date → time → confirm) with inline keyboards and real-time double-booking protection.</p>
+          <div class="tag-row"><span class="tag">python-telegram-bot</span><span class="tag">SQLite</span><span class="tag">Docker</span></div>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/Omnia9789/telegram-booking-bot" target="_blank" rel="noopener">View Code <span class="arrow">↗</span></a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATES ============ -->
+<section class="section section-alt" id="certificates">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up"><span class="eyebrow-tag">06</span>Certificates</p>
+    <h2 class="reveal-up section-title">Learning, documented.</h2>
+    <p class="reveal-up body-text cert-intro">Tap a certificate to view it full-size, or download the image directly — no external verification links, just the credential itself.</p>
+
+    <div class="cert-grid" id="certGrid">
+
+      <div class="cert-card reveal-up" data-full="assets/certs/coursera-supervised-ml.jpg" data-title="Supervised Machine Learning: Regression and Classification" data-issuer="Stanford Online &amp; DeepLearning.AI, via Coursera" data-date="Jan 24, 2025">
+        <img src="assets/certs/coursera-supervised-ml.jpg" alt="Supervised Machine Learning certificate" loading="lazy" />
+        <div class="cert-info">
+          <h3>Supervised Machine Learning: Regression and Classification</h3>
+          <p>Stanford Online &amp; DeepLearning.AI · Jan 2025</p>
+        </div>
+        <button class="cert-download" data-file="assets/certs/coursera-supervised-ml.jpg" data-name="Omnia-Ali-Supervised-Machine-Learning.jpg" aria-label="Download certificate">⭳</button>
+      </div>
+
+      <div class="cert-card reveal-up" data-full="assets/certs/coursera-advanced-learning-algorithms.jpg" data-title="Advanced Learning Algorithms" data-issuer="Stanford Online &amp; DeepLearning.AI, via Coursera" data-date="Apr 21, 2025">
+        <img src="assets/certs/coursera-advanced-learning-algorithms.jpg" alt="Advanced Learning Algorithms certificate" loading="lazy" />
+        <div class="cert-info">
+          <h3>Advanced Learning Algorithms</h3>
+          <p>Stanford Online &amp; DeepLearning.AI · Apr 2025</p>
+        </div>
+        <button class="cert-download" data-file="assets/certs/coursera-advanced-learning-algorithms.jpg" data-name="Omnia-Ali-Advanced-Learning-Algorithms.jpg" aria-label="Download certificate">⭳</button>
+      </div>
+
+      <div class="cert-card reveal-up" data-full="assets/certs/coursera-improving-deep-nn.jpg" data-title="Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization" data-issuer="DeepLearning.AI, via Coursera" data-date="Jun 3, 2024">
+        <img src="assets/certs/coursera-improving-deep-nn.jpg" alt="Improving Deep Neural Networks certificate" loading="lazy" />
+        <div class="cert-info">
+          <h3>Improving Deep Neural Networks</h3>
+          <p>DeepLearning.AI · Jun 2024</p>
+        </div>
+        <button class="cert-download" data-file="assets/certs/coursera-improving-deep-nn.jpg" data-name="Omnia-Ali-Improving-Deep-Neural-Networks.jpg" aria-label="Download certificate">⭳</button>
+      </div>
+
+      <div class="cert-card reveal-up" data-full="assets/certs/google-data-analytics.jpg" data-title="Google Data Analytics Professional Certificate" data-issuer="Google, via Coursera" data-date="Feb 2, 2026">
+        <img src="assets/certs/google-data-analytics.jpg" alt="Google Data Analytics certificate" loading="lazy" />
+        <div class="cert-info">
+          <h3>Google Data Analytics Professional Certificate</h3>
+          <p>Google · Feb 2026</p>
+        </div>
+        <button class="cert-download" data-file="assets/certs/google-data-analytics.jpg" data-name="Omnia-Ali-Google-Data-Analytics.jpg" aria-label="Download certificate">⭳</button>
+      </div>
+
+      <div class="cert-card reveal-up" data-full="assets/certs/huggingface-agents.jpg" data-title="Hugging Face Agents Course" data-issuer="Hugging Face" data-date="Apr 27, 2025">
+        <img src="assets/certs/huggingface-agents.jpg" alt="Hugging Face Agents Course certificate" loading="lazy" />
+        <div class="cert-info">
+          <h3>Agents Course — Certificate of Excellence</h3>
+          <p>Hugging Face · Apr 2025</p>
+        </div>
+        <button class="cert-download" data-file="assets/certs/huggingface-agents.jpg" data-name="Omnia-Ali-HuggingFace-Agents-Course.jpg" aria-label="Download certificate">⭳</button>
+      </div>
+
+      <div class="cert-card reveal-up" data-full="assets/certs/hp-life-data-science-analytics.jpg" data-title="Data Science &amp; Analytics" data-issuer="HP LIFE" data-date="Feb 10, 2026">
+        <img src="assets/certs/hp-life-data-science-analytics.jpg" alt="HP LIFE Data Science and Analytics certificate" loading="lazy" />
+        <div class="cert-info">
+          <h3>Data Science &amp; Analytics</h3>
+          <p>HP LIFE · Feb 2026</p>
+        </div>
+        <button class="cert-download" data-file="assets/certs/hp-life-data-science-analytics.jpg" data-name="Omnia-Ali-HP-LIFE-Data-Science.jpg" aria-label="Download certificate">⭳</button>
+      </div>
+
+      <div class="cert-card reveal-up" data-full="assets/certs/manara-databases.jpg" data-title="Databases Learning Path" data-issuer="Manara" data-date="Feb 10, 2026">
+        <img src="assets/certs/manara-databases.jpg" alt="Manara Databases certificate" loading="lazy" />
+        <div class="cert-info">
+          <h3>Databases — Learning Path</h3>
+          <p>Manara · Feb 2026</p>
+        </div>
+        <button class="cert-download" data-file="assets/certs/manara-databases.jpg" data-name="Omnia-Ali-Manara-Databases.jpg" aria-label="Download certificate">⭳</button>
+      </div>
+
+      <div class="cert-card reveal-up" data-full="assets/certs/ieee-xtreme-18.jpg" data-title="IEEEXtreme 18.0 Programming Competition" data-issuer="IEEE · Team Algorithm Legends" data-date="Oct 26, 2024">
+        <img src="assets/certs/ieee-xtreme-18.jpg" alt="IEEEXtreme 18.0 certificate" loading="lazy" />
+        <div class="cert-info">
+          <h3>IEEEXtreme 18.0 Programming Competition</h3>
+          <p>IEEE · Team Algorithm Legends · Oct 2024</p>
+        </div>
+        <button class="cert-download" data-file="assets/certs/ieee-xtreme-18.jpg" data-name="Omnia-Ali-IEEEXtreme-18.jpg" aria-label="Download certificate">⭳</button>
+      </div>
+
+      <div class="cert-card reveal-up" data-full="assets/certs/ibm-critical-creative-thinking.jpg" data-title="Solving Problems with Critical and Creative Thinking" data-issuer="IBM SkillsBuild for Students" data-date="">
+        <img src="assets/certs/ibm-critical-creative-thinking.jpg" alt="IBM Critical and Creative Thinking certificate" loading="lazy" />
+        <div class="cert-info">
+          <h3>Solving Problems with Critical &amp; Creative Thinking</h3>
+          <p>IBM SkillsBuild for Students</p>
+        </div>
+        <button class="cert-download" data-file="assets/certs/ibm-critical-creative-thinking.jpg" data-name="Omnia-Ali-IBM-Critical-Creative-Thinking.jpg" aria-label="Download certificate">⭳</button>
+      </div>
+
+      <div class="cert-card reveal-up" data-full="assets/certs/ibm-introduction-emerging-technologies.jpg" data-title="Introduction to Emerging Technologies" data-issuer="IBM SkillsBuild for Students" data-date="">
+        <img src="assets/certs/ibm-introduction-emerging-technologies.jpg" alt="IBM Introduction to Emerging Technologies certificate" loading="lazy" />
+        <div class="cert-info">
+          <h3>Introduction to Emerging Technologies</h3>
+          <p>IBM SkillsBuild for Students</p>
+        </div>
+        <button class="cert-download" data-file="assets/certs/ibm-introduction-emerging-technologies.jpg" data-name="Omnia-Ali-IBM-Emerging-Technologies.jpg" aria-label="Download certificate">⭳</button>
+      </div>
+
+      <div class="cert-card reveal-up" data-full="assets/certs/ibm-focus-entrepreneurial.jpg" data-title="Focus Entrepreneurial" data-issuer="IBM SkillsBuild for Students" data-date="">
+        <img src="assets/certs/ibm-focus-entrepreneurial.jpg" alt="IBM Focus Entrepreneurial certificate" loading="lazy" />
+        <div class="cert-info">
+          <h3>Focus: Entrepreneurial Mindset</h3>
+          <p>IBM SkillsBuild for Students</p>
+        </div>
+        <button class="cert-download" data-file="assets/certs/ibm-focus-entrepreneurial.jpg" data-name="Omnia-Ali-IBM-Entrepreneurial-Mindset.jpg" aria-label="Download certificate">⭳</button>
+      </div>
+
+      <div class="cert-card reveal-up" data-full="assets/certs/university-minnesota-preparing-manage-hr.jpg" data-title="Preparing to Manage Human Resources" data-issuer="University of Minnesota, via Coursera" data-date="Sep 6, 2021">
+        <img src="assets/certs/university-minnesota-preparing-manage-hr.jpg" alt="University of Minnesota HR certificate" loading="lazy" />
+        <div class="cert-info">
+          <h3>Preparing to Manage Human Resources</h3>
+          <p>University of Minnesota · Sep 2021</p>
+        </div>
+        <button class="cert-download" data-file="assets/certs/university-minnesota-preparing-manage-hr.jpg" data-name="Omnia-Ali-UMN-Manage-Human-Resources.jpg" aria-label="Download certificate">⭳</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <div class="lightbox-content">
+    <img id="lightboxImg" src="" alt="" />
+    <div class="lightbox-meta">
+      <h3 id="lightboxTitle"></h3>
+      <p id="lightboxIssuer"></p>
+      <button class="btn btn-primary btn-sm" id="lightboxDownload">Download Certificate <span class="arrow">↓</span></button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact-section" id="contact">
+  <div class="hero-aura hero-aura-c" aria-hidden="true"></div>
+  <div class="section-inner">
+    <p class="eyebrow reveal-up"><span class="eyebrow-tag">07</span>Contact</p>
+    <h2 class="reveal-up section-title">Let's build something intelligent.</h2>
+    <p class="reveal-up body-text" style="margin-bottom:48px;">
+      Open to internships and full-time roles across AI engineering, backend development, and data — as well as English–Arabic technical translation and interpretation work. Have a project in mind, or think there's a fit? Reach out below or through the form.
+    </p>
+
+    <div class="contact-boxes">
+      <div class="contact-box reveal-up">
+        <h3>Get In Touch</h3>
+        <p class="contact-box-sub">Have a project in mind or want to discuss a collaboration? Send a message and it'll open straight in your email app, ready to go.</p>
+
+        <form id="contactForm" class="contact-form">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-field">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" placeholder="your.email@example.com" required />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" name="subject" placeholder="What is this regarding?" required />
+          </div>
+          <div class="form-field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Send Message <span class="arrow">→</span></button>
+        </form>
+      </div>
+
+      <div class="contact-box reveal-up">
+        <h3>Contact Information</h3>
+        <p class="contact-box-sub">Feel free to reach out through any of these channels.</p>
+
+        <div class="contact-info-list">
+          <div class="contact-info-row">
+            <span class="contact-info-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18v12H3V6Z"/><path d="m3 6 9 7 9-7"/></svg>
+            </span>
+            <div>
+              <p class="ci-label">Email</p>
+              <a class="ci-value" href="mailto:omniaali80087@gmail.com">omniaali80087@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-info-row">
+            <span class="contact-info-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 2.9a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.5 2.9.6a2 2 0 0 1 1.8 2Z"/></svg>
+            </span>
+            <div>
+              <p class="ci-label">Phone</p>
+              <a class="ci-value" href="tel:+201159812405">+20 115 981 2405</a>
+            </div>
+          </div>
+          <div class="contact-info-row">
+            <span class="contact-info-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10.5c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10.5" r="3"/></svg>
+            </span>
+            <div>
+              <p class="ci-label">Location</p>
+              <p class="ci-value">Cairo, Egypt</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="connect-label">Connect with me</p>
+        <div class="connect-icons">
+          <a class="icon-btn" href="https://github.com/Omnia9789" target="_blank" rel="noopener" aria-label="GitHub profile">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.3 3.5.99.1-.78.42-1.3.76-1.6-2.66-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.6-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+          </a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/omnia-ali-781977376/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM3.56 20.45h3.56V9H3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+          </a>
+          <a class="icon-btn" href="https://www.facebook.com/share/1Jjuz8CJTw/" target="_blank" rel="noopener" aria-label="Facebook profile">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 5.99 4.39 10.95 10.13 11.85v-8.4H7.08v-3.45h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.95h-1.51c-1.49 0-1.96.93-1.96 1.89v2.28h3.33l-.53 3.45h-2.8v8.4C19.61 23.02 24 18.06 24 12.07Z"/></svg>
+          </a>
+        </div>
+
+        <a class="btn btn-ghost btn-sm resume-inline" href="assets/resume/Omnia-Ali-Resume.pdf" download>Download Résumé <span class="arrow">↓</span></a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Omnia Ali. Built with intent, one section at a time.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a>
+    </div>
+  </footer>
+</section>
+
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<script>
+  const IMPORTMAP = {"imports":{
+    "three":"./js/vendor/three/three.module.min.js",
+    "three/addons/":"./js/vendor/three/examples/jsm/"
+  }};
+  const s = document.createElement('script');
+  s.type = 'importmap';
+  s.text = JSON.stringify(IMPORTMAP);
+  document.head.appendChild(s);
+</script>
+<script type="module" src="js/robot.js?v=7"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
