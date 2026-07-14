@@ -32,12 +32,7 @@ assets/certs/            12 certificate images
 assets/resume/           downloadable résumé PDF
 ```
 
-## Things you'll likely want to customize
 
-- **Résumé file**: swap `assets/resume/Omnia-Ali-Resume.pdf` for whichever CV you want people downloading — the button in the nav and footer both point to that exact filename, so keep the name the same or update the two `href` links in `index.html`.
-- **Phone number**: left out of the Contact section by default for privacy — add it next to the email button in `index.html` if you want it public.
-- **Two projects without a specific GitHub link** (Scratch vs. Keras, Recipe Finder): currently link to your GitHub profile instead of a repo — add the real repo URL in `index.html` once it's public, in the two `<a class="btn btn-ghost btn-sm">GitHub Profile` lines.
-- **Colors**: everything is driven by the CSS variables at the top of `css/style.css` (`--violet`, `--cyan`, `--void`, etc.) — change those and the whole palette updates.
 
 ## Notes on a few choices I made
 
