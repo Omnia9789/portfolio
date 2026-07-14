@@ -31,10 +31,3 @@ assets/projects/         18 project screenshots
 assets/certs/            12 certificate images
 assets/resume/           downloadable résumé PDF
 ```
-
-
-
-## Notes on a few choices I made
-
-- Customer-facing/hospitality roles from your CVs weren't included in Experience — I kept the section focused on AI/backend/data/automation work to match the "AI Engineer & Backend Developer" identity. Happy to add them back in if you'd like a fuller picture.
-- The Education section isn't in the top nav (it sits right after About in the scroll order) — easy to add as a 7th nav link if you want direct access to it.
