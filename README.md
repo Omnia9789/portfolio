@@ -1,4 +1,4 @@
-# Omnia Ali — Portfolio
+# My — Portfolio
 
 A static, no-build-step portfolio site. No npm install, no framework — just open it or drop it on any static host.
 
